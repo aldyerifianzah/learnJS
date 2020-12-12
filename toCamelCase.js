@@ -55,5 +55,5 @@ return hasil
 
 }
 
-console.log(toCamelCase("anjing_babi_apaaaa-sokasoi"))
+// console.log(toCamelCase("anjing_babi_apaaaa-sokasoi"))
 // console.log(toCamelCase("apa_aja-kontol"))

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> tutorial html 4 canvas</title>
+    </head>
+    <body>
+
+
+        <canvas id="myCanvas" width="640" height="480" style="border:1px solid #000000"></canvas>
+        
+        <script type="text/javascript">
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+            
+        // ctx.fillRect(10,10,1,1); titik
+
+        /*ctx.beginPath() untuk membuat garis baru.
+        ctx.moveTo(x,y) untuk menentukan titik awal.
+        ctx.lineTo(x,y) untuk menentukan titik akhir.
+        ctx.stroke() untuk menggambar garisnya.*/
+
+        // ctx.beginPath();
+        // ctx.moveTo(10,10);
+        // ctx.lineTo(50,50);
+        // ctx.stroke();
+        
+
+        /*
+         ctx.strokeRect(x,y,w,h) persegi dengan garis (outline) saja.
+        ctx.fillRect(x,y,w,h) persegi dengan polesan warna (default-nya hitam).
+        ctx.clearRect(x,y,w,h) persegi transparan untuk menghapus.
+        */
+
+            //buat kotak
+            // ctx.strokeRect(10,10,100,100);
+            // ctx.clearRect(5,5,20,20)
+            // ctx.fillRect(120,10,100,100);
+
+            
+            //buat segitiga
+    //         ctx.beginPath();
+    //         ctx.moveTo(100,100);//titik awal
+    //         ctx.lineTo(100, 300);//titik ke 2
+    //         ctx.lineTo(300, 300);//titik ke 3
+    //         ctx.closePath();//titik ke - 3 ke awal
+
+
+    //    //buat garis
+    //    ctx.stroke()
+
+    //buat lingkaran
+
+    // ctx.beginPath();
+    // ctx.arc(95, 50, 40, 0, 2*Math.PI);
+    // ctx.stroke();
+       
+
+    //buat teks
+
+    ctx.font = "30px arial";
+    ctx.fillText("thank gayn",10,50);
+
+    ctx.font = "64px arial";
+    ctx.strokeText("yeeee",10,120)
+
+
+
+       </script>
+
+
+
+    </body>
+</html>
